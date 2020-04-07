@@ -93,7 +93,20 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var slides = document.querySelectorAll('#slides .testimonials__slide');
+var currentSlide = 0;
 
+var nextSlide = function nextSlide() {
+  slides[currentSlide].className = 'testimonials__slide';
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].className = 'testimonials__slide visible';
+};
+
+var sliderSpinner = function sliderSpinner(ms) {
+  return setInterval(nextSlide, ms);
+};
+
+sliderSpinner(4000);
 
 /***/ }),
 

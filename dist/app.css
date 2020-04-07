@@ -192,7 +192,7 @@ ul li {
 }
 
 .work3 {
-  background: url(/img/works/work1.png) no-repeat;
+  background: url(/img/works/work3.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -269,6 +269,70 @@ ul li {
 .team__contacts i {
   margin: 13px;
   color: #c6cacc;
+}
+
+.testimonials__slider {
+  position: relative;
+  height: 480px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.testimonials__slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  transition: opacity 1s;
+}
+
+.visible {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide-item {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-item div {
+  width: 50%;
+  background-color: #53354a;
+}
+
+.slide-item h5 {
+  margin: 114px 0px 30px 85px;
+  max-width: 55%;
+  font-family: "Cardo", serif;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.slide-item p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 85px;
+}
+
+.slide-item img {
+  width: 100%;
+}
+
+.slide-item-img {
+  display: flex;
 }
 
 .download {
