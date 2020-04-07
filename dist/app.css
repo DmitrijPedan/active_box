@@ -115,7 +115,6 @@ ul li {
 
 .features__case {
   margin: 37px 47px 37px 47px;
-  width: 30%;
   text-align: center;
 }
 
@@ -226,5 +225,44 @@ ul li {
   background: url(/img/works/work8.png) no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.team {
+  padding: 100px 0px;
+}
+
+.team__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.team__item {
+  margin: 15px;
+}
+
+.team__name {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 30px 0 16px 0;
+}
+
+.team__position {
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #e84545;
+  margin-bottom: 30px;
+}
+
+.team__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.team__contacts i {
+  margin: 13px;
+  color: #c6cacc;
 }
 
