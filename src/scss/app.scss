@@ -1,7 +1,10 @@
-@import "config/default_settings.scss";
 @import "config/fonts.scss";
 @import "config/variables.scss";
+@import "config/default_settings.scss";
+
+@import "buttons/default.scss";
 
 @import "layouts/container.scss";
 @import "layouts/header.scss";
-@import "buttons/default.scss";
+@import "layouts/features.scss";
+

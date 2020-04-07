@@ -1,0 +1,29 @@
+.features {
+    margin: 84px 0px 87px 0px;
+    &__row {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__case {
+        margin: 37px 47px 37px 47px;
+        width: 30%;
+        text-align: center;
+        img {
+            margin-bottom: 34px;
+        }
+    }
+    &__title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    &__subtitle {
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 21px;
+    }
+}
+
