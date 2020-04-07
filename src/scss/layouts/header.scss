@@ -1,0 +1,57 @@
+.header {
+    background: url(/img/header/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 38px 0px;
+        border-bottom: 1px solid $headerBorderColor;
+    }
+    &__logo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 24px;
+        color: white;
+        text-transform: uppercase;
+        span {
+            color: $logoSpanColor;
+            font-weight: 1000;
+        }
+    }
+    &__menu {
+        display: flex;
+        flex-direction: row;
+    }
+    &__item a {
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-left: 60px;
+        color: white;
+    }
+    &__body {
+        text-align: center;
+    }
+    &__title {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 71px;
+        text-transform: uppercase;
+        margin: 155px 155px 40px 155px;
+    }
+    &__subtitle {
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0 130px;
+    }
+    &__btn {
+        margin: 77px 0px 156px 0px;
+    }
+}
+
