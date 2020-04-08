@@ -24,6 +24,7 @@
     &__menu {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
     &__item {
         a {
@@ -47,6 +48,22 @@
         line-height: 71px;
         text-transform: uppercase;
         margin: 155px 155px 40px 155px;
+        @media (max-width: 1500px) {
+            margin: 135px 125px 40px 125px;
+        }
+        @media (max-width: 992px) {
+            margin: 100px 95px 40px 95px;
+        }
+        @media (max-width: 768px) {
+            font-size: 45px;
+            line-height: 51px;
+            margin: 40px 50px;
+        }
+        @media (max-width: 576px) {
+            font-size: 30px;
+            line-height: 31px;
+            margin: 40px 50px;
+        }
     }
     &__subtitle {
         color: #ffffff;
@@ -54,10 +71,34 @@
         font-size: 20px;
         font-weight: 300;
         margin: 0 130px;
+        @media (max-width: 1500px) {
+            margin: 0 95px;
+        }
+        @media (max-width: 992px) {
+            margin: 0 70px;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+        @media (max-width: 576px) {
+            font-size: 20px;
+            margin: 20px;
+        }
     }
     &__btn {
         padding: 18px 50px;
         margin: 77px 0px 156px 0px;
+        @media (max-width: 1500px) {
+            margin: 67px 0px 136px 0px;
+        }
+        @media (max-width: 992px) {
+            margin: 57px 0px 116px 0px;
+        }
+        @media (max-width: 768px) {
+            margin: 47px 0px 96px 0px;
+        }
+        @media (max-width: 576px) {
+            margin: 37px 0px 66px 0px;
+        }
     }
 }
-

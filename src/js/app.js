@@ -6,4 +6,4 @@ const nextSlide = () => {
     slides[currentSlide].className = 'testimonials__slide visible';
 }
 const sliderSpinner = (ms) => setInterval(nextSlide, ms);
-sliderSpinner(4000);
+sliderSpinner(5000);

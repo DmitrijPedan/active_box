@@ -106,7 +106,7 @@ var sliderSpinner = function sliderSpinner(ms) {
   return setInterval(nextSlide, ms);
 };
 
-sliderSpinner(4000);
+sliderSpinner(5000);
 
 /***/ }),
 
