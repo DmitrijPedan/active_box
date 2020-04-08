@@ -107,6 +107,12 @@ var sliderSpinner = function sliderSpinner(ms) {
 };
 
 sliderSpinner(5000);
+var collBtn = document.getElementById("collapsible-btn");
+var content = document.getElementById("collapsible-ul");
+collBtn.addEventListener("click", function () {
+  collBtn.classList.toggle("active");
+  content.style.display === "flex" ? content.style.display = "none" : content.style.display = "flex";
+});
 
 /***/ }),
 
