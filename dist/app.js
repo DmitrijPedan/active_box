@@ -93,6 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+//slider
 var slides = document.querySelectorAll('#slides .testimonials__slide');
 var currentSlide = 0;
 
@@ -106,13 +107,14 @@ var sliderSpinner = function sliderSpinner(ms) {
   return setInterval(nextSlide, ms);
 };
 
-sliderSpinner(5000);
+sliderSpinner(5000); //burger
+
 var collBtn = document.getElementById("collapsible-btn");
 var content = document.getElementById("collapsible-ul");
 collBtn.addEventListener("click", function () {
   collBtn.classList.toggle("active");
   content.style.display === "flex" ? content.style.display = "none" : content.style.display = "flex";
-});
+}); //fetch json
 
 /***/ }),
 
