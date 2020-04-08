@@ -17,6 +17,53 @@ ul li {
   list-style: none;
 }
 
+.collapsible {
+  display: none;
+  position: relative;
+  background: #e84545;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  text-align: left;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .collapsible {
+    display: block;
+  }
+}
+
+.collapsible span {
+  height: 2px;
+  width: 42px;
+  background: #ffffff;
+  position: absolute;
+  top: 48%;
+  left: auto;
+}
+
+.collapsible span::before,
+.collapsible span::after {
+  content: "";
+  height: 2px;
+  width: 42px;
+  background: #ffffff;
+  position: absolute;
+}
+
+.collapsible span::before {
+  top: 8px;
+}
+
+.collapsible span::after {
+  top: -8px;
+}
+
 .btn-default {
   cursor: pointer;
   outline: none;
@@ -93,7 +140,7 @@ ul li {
 }
 
 .header__logo span {
-  color: #66697e;
+  color: #6c7279;
   font-weight: 1000;
 }
 
@@ -246,58 +293,6 @@ ul li {
   .header__btn {
     margin: 37px 0px 66px 0px;
   }
-}
-
-.collapsible {
-  display: none;
-  position: relative;
-  background: #e84545;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  width: 60px;
-  height: 60px;
-  padding: 8px;
-  text-align: left;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-@media (max-width: 992px) {
-  .collapsible {
-    display: block;
-  }
-}
-
-.collapsible span {
-  height: 2px;
-  width: 42px;
-  background: #ffffff;
-  position: absolute;
-  top: 48%;
-  left: auto;
-}
-
-.collapsible span::before,
-.collapsible span::after {
-  content: "";
-  height: 2px;
-  width: 42px;
-  background: #ffffff;
-  position: absolute;
-}
-
-.collapsible span::before {
-  top: 8px;
-}
-
-.collapsible span::after {
-  top: -8px;
-}
-
-.active,
-.collapsible:hover {
-  background: #e84545;
 }
 
 .features {
@@ -795,7 +790,7 @@ ul li {
   text-align: center;
   padding: 29px 0;
   background-color: #313454;
-  color: #808080;
+  color: #6c7279;
   font-size: 13px;
   line-height: 22px;
 }

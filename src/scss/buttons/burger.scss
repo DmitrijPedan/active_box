@@ -1,0 +1,43 @@
+.collapsible {
+    display: none;
+    position: relative;
+    background: $tomato;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    text-align: left;
+    color: $white;
+    cursor: pointer;
+    @media (max-width: 992px) {
+        display: block;
+    }
+}
+
+.collapsible span {
+    height: 2px;
+    width: 42px;
+    background: $white;
+    position: absolute;
+    top: 48%;
+    left: auto;
+}
+
+.collapsible span::before,
+.collapsible span::after {
+    content: '';
+    height: 2px;
+    width: 42px;
+    background: $white;
+    position: absolute;
+}
+
+.collapsible span::before {
+    top: 8px;
+}
+
+.collapsible span::after {
+    top: -8px;
+}

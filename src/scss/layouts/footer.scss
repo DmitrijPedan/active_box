@@ -1,6 +1,6 @@
 .footer-contacts {
     padding: 40px 0 50px 0;
-    background-color: $footerLightColor;
+    background-color: $light-blue;
     color: $white;
     &__row {
         display: flex;
@@ -67,8 +67,8 @@
 .footer-copyright {
     text-align: center;
     padding: 29px 0;
-    background-color: $footerDarkColor;
-    color: $footerCopyright;
+    background-color: $medium-blue;
+    color: $medium-gray;
     font-size: 13px;
     line-height: 22px;
     p {

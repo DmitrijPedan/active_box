@@ -8,7 +8,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 38px 0px;
-        border-bottom: 1px solid $headerBorderColor;
+        border-bottom: 1px solid $gray;
         @media (max-width: 992px) {
             align-items: flex-start;
         }
@@ -20,7 +20,7 @@
         color: white;
         text-transform: uppercase;
         span {
-            color: $logoSpanColor;
+            color: $medium-gray;
             font-weight: 1000;
         }
     }
@@ -121,54 +121,4 @@
             margin: 37px 0px 66px 0px;
         }
     }
-}
-
-
-.collapsible {
-    display: none;
-    position: relative;
-    background: $defaultButtonColor;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    width: 60px;
-    height: 60px;
-    padding: 8px;
-    text-align: left;
-    color: $white;
-    cursor: pointer;
-    @media (max-width: 992px) {
-        display: block;
-    }
-}
-
-.collapsible span {
-    height: 2px;
-    width: 42px;
-    background: $white;
-    position: absolute;
-    top: 48%;
-    left: auto;
-}
-
-.collapsible span::before,
-.collapsible span::after {
-    content: '';
-    height: 2px;
-    width: 42px;
-    background: $white;
-    position: absolute;
-}
-
-.collapsible span::before {
-    top: 8px;
-}
-
-.collapsible span::after {
-    top: -8px;
-}
-
-.active, 
-.collapsible:hover {
-    background: $defaultButtonColor;
 }
